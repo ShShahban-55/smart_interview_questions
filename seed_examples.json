@@ -1,0 +1,50 @@
+[
+  {
+    "cv": "Skills: Python, Django, PostgreSQL. Experience: 3 years backend developer. Project: e-commerce platform with 50k products.",
+    "job": "Backend Developer (Django)",
+    "level": "Mid",
+    "questions": [
+      {"question": "In your e-commerce platform with 50k products, how did you avoid N+1 queries in Django?",
+       "skill_tested": "ORM Optimization", "difficulty": "Medium",
+       "ideal_answer": "Use select_related for ForeignKey and prefetch_related for ManyToMany, and verify with django-debug-toolbar."},
+      {"question": "When would adding a database index hurt performance in your PostgreSQL setup?",
+       "skill_tested": "Database Indexing", "difficulty": "Medium",
+       "ideal_answer": "Indexes slow down writes and use storage, so too many or unused indexes hurt insert and update performance."},
+      {"question": "How would you design authentication for the REST API of your platform?",
+       "skill_tested": "API Security", "difficulty": "Medium",
+       "ideal_answer": "Use JWT or OAuth2 over HTTPS with short-lived access tokens, refresh tokens, and rate limiting."}
+    ]
+  },
+  {
+    "cv": "Skills: Python, Pandas, Scikit-learn. Experience: fresh graduate. Project: house price prediction using regression.",
+    "job": "Junior Data Scientist",
+    "level": "Junior",
+    "questions": [
+      {"question": "In your house price prediction project, how did you check that your model was not overfitting?",
+       "skill_tested": "Model Evaluation", "difficulty": "Easy",
+       "ideal_answer": "Compare train and validation scores, use cross-validation, and apply regularization or early stopping."},
+      {"question": "What is the difference between a list and a tuple in Python?",
+       "skill_tested": "Python Fundamentals", "difficulty": "Easy",
+       "ideal_answer": "Lists are mutable, tuples are immutable and can be used as dictionary keys."},
+      {"question": "Which metric would you use for your regression model and why?",
+       "skill_tested": "Regression Metrics", "difficulty": "Medium",
+       "ideal_answer": "RMSE penalizes large errors, MAE is robust to outliers, and R2 explains variance; choose based on business cost of errors."}
+    ]
+  },
+  {
+    "cv": "Skills: Python, PyTorch, LangChain, FAISS. Experience: 6 years ML engineer. Project: customer support chatbot using RAG serving 100k users.",
+    "job": "Senior ML Engineer (LLM)",
+    "level": "Senior",
+    "questions": [
+      {"question": "For your RAG chatbot serving 100k users, how did you decide between RAG and fine-tuning?",
+       "skill_tested": "LLM Architecture", "difficulty": "Hard",
+       "ideal_answer": "RAG gives fresh knowledge and fewer hallucinations without retraining, fine-tuning changes style and behavior; often combine both."},
+      {"question": "How would you scale your retrieval layer if document volume grows 100x?",
+       "skill_tested": "System Design", "difficulty": "Hard",
+       "ideal_answer": "Use sharded vector indexes, approximate nearest neighbor search, caching, and metadata filtering."},
+      {"question": "Explain why LoRA is efficient for adapting large models.",
+       "skill_tested": "Fine-tuning", "difficulty": "Medium",
+       "ideal_answer": "LoRA freezes base weights and trains small low-rank matrices, cutting memory and trainable parameters; QLoRA adds 4-bit quantization."}
+    ]
+  }
+]

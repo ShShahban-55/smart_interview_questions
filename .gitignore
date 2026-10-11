@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Generated artifacts (rebuilt by scripts / too large for Git)
+chroma_db/
+qlora_adapter/
+*.safetensors
+*.bin
+generated.jsonl
+train.jsonl
+
+# Secrets / local files
+.env
+cloudflared
+*.log
+.DS_Store
