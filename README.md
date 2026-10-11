@@ -8,8 +8,8 @@ An LLM application that reads a candidate's CV and a target job title, then gene
 | **Fine-tuning (QLoRA)** | Teaches the base model the exact output style: questions tied to the CV, graded difficulty, and a stable JSON structure. |
 | **Output Parser** | Validates every model response against a Pydantic schema, so the UI always receives structured, trustworthy data. |
 
-**Author:** _(write your name here)_  
-**Supervisor:** _(write supervisor's name here)_
+**Author:** _(Shahd Shabaan Mohammed)_  
+**Supervisor:** _(Tips_Hindawi)_
 
 ---
 
